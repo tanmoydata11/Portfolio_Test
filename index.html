@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanmoy Ghatak — Data Analyst Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- =====================================================
+         HERO SECTION
+         ===================================================== -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+
+            <!-- Left: Text -->
+            <div class="hero-text">
+                <div class="badge">
+                    <span>DATA ANALYST</span> PORTFOLIO
+                </div>
+                <h1 class="hero-name">
+                    TANMOY<br>
+                    <span class="highlight">GHATAK</span>
+                </h1>
+                <p class="hero-tagline">
+                    Turning <span class="highlight">complex data</span><br>
+                    into <span class="highlight">actionable insights</span>
+                </p>
+                <div class="scroll-indicator">
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+
+            <!-- Right: Profile Photo -->
+            <div class="hero-image">
+                <div class="profile-circle">
+                    <!--
+                        HOW TO ADD YOUR PHOTO:
+                        1. Put your photo (e.g. profile.jpg) inside assets/images/
+                        2. Delete the <div class="profile-initials"> block below
+                        3. Uncomment the <img> tag below
+                    -->
+                    <!-- <img src="assets/images/profile.jpg" alt="Tanmoy Ghatak"> -->
+                    <div class="profile-initials">TG</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT SECTION
+         ===================================================== -->
+    <section id="about">
+        <div class="section-header">
+            <span>About</span> Me
+        </div>
+
+        <div class="about-content">
+
+            <!-- Left: Bio text -->
+            <div class="about-text">
+                <h2>Hello,<br>I'm <span class="highlight">Tanmoy!</span></h2>
+                <p>
+                    <span class="highlight-text">Aspiring Data Analyst</span> transitioning from a successful career in
+                    <span class="highlight-text">game development</span>, bringing strong technical foundations in programming,
+                    problem-solving, and systems thinking. Proficient in
+                    <span class="highlight-text">Python, SQL, Power BI, and Microsoft Excel</span>, with hands-on experience in
+                    machine learning techniques including supervised and unsupervised learning.
+                </p>
+                <p>
+                    With over 3 years of experience as a
+                    <span class="highlight-text">Senior Game Developer at MedVR Education</span>, I built immersive VR/AR
+                    applications, designed complex behavior systems, and created data-driven workflows — skills that translate
+                    directly into analytical thinking and data modeling.
+                </p>
+            </div>
+
+            <!-- Right: Social icons -->
+            <div class="social-links">
+                <a href="mailto:aloke8459@gnmail.com" class="social-icon" title="Email">📧</a>
+                <a href="https://linkedin.com/in/tanmoy11ghatak" class="social-icon" target="_blank" title="LinkedIn">💼</a>
+                <a href="tel:+919674346700" class="social-icon" title="Phone">📱</a>
+            </div>
+
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="cta-buttons">
+            <!--
+                HOW TO ADD CV DOWNLOAD:
+                1. Put your CV PDF inside assets/ (e.g. assets/Tanmoy_CV.pdf)
+                2. Update the href below to: href="assets/Tanmoy_CV.pdf"
+                3. Add the download attribute: download="Tanmoy_Ghatak_CV.pdf"
+            -->
+            <a href="#" class="btn btn-primary">Download CV</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         SKILLS SECTION
+         ===================================================== -->
+    <section id="skill">
+        <div class="section-header">
+            <span>Technical</span> Skills
+        </div>
+
+        <div class="skills-grid">
+
+            <!-- Column 1: Programming Languages -->
+            <div class="skill-category">
+                <h4>Programming<br>Languages</h4>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-icon">🗄️</div>
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🐍</div>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Data Analysis Tools -->
+            <div class="skill-category">
+                <h4>Data Analysis &<br>Visualization Tools</h4>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-icon">📊</div>
+                        <span>Power BI</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">📋</div>
+                        <span>Microsoft Excel</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 3: Python Libraries -->
+            <div class="skill-category">
+                <h4>Python<br>Libraries</h4>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-icon">🐼</div>
+                        <span>pandas</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🔢</div>
+                        <span>NumPy</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🤖</div>
+                        <span>scikit-learn</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">📈</div>
+                        <span>matplotlib</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 4: ML & Dev Skills -->
+            <div class="skill-category">
+                <h4>Machine Learning &<br>Development Skills</h4>
+                <ul class="skill-list">
+                    <li>Supervised Learning</li>
+                    <li>Unsupervised Learning</li>
+                    <li>VR/AR Development</li>
+                    <li>Game Development</li>
+                    <li>UI Development</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         BACKGROUND SECTION (Education & Experience)
+         ===================================================== -->
+    <section id="background">
+        <div class="section-header">
+            <span>Education & Experience</span> Background
+        </div>
+
+        <div class="background-grid">
+
+            <!-- Left: Education & Certifications -->
+            <div class="education-section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="company-logo">🎓</div>
+                    <div class="item-content">
+                        <h3>JIS College of Engineering, Kalyani</h3>
+                        <h4>Bachelor of Engineering — Electronics &amp; Communication</h4>
+                        <p class="item-meta">Graduated: 2022</p>
+                    </div>
+                </div>
+
+                <h2 class="certifications-title">Certifications</h2>
+                <div class="education-item">
+                    <div class="company-logo">📜</div>
+                    <div class="item-content">
+                        <h3>Udemy &amp; Coursera</h3>
+                        <h4>Data Analysis Training Courses</h4>
+                        <p>
+                            Completed multiple courses covering Python for Data Analysis,
+                            SQL for Data Science, Machine Learning Fundamentals, and
+                            Data Visualization with Power BI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Work Experience -->
+            <div class="experience-section">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <div class="company-logo">🎮</div>
+                    <div class="item-content">
+                        <h3>MedVR Education</h3>
+                        <h4>Senior Game Developer — Full-time (July 2022 – November 2025)</h4>
+                        <p>
+                            Developed immersive VR/AR educational applications for medical training,
+                            demonstrating strong technical problem-solving and systems design skills
+                            applicable to data structures and algorithms.
+                        </p>
+                        <p>
+                            Designed gameplay mechanics and NPC behavior systems applying logical
+                            thinking and pattern recognition — skills directly transferable to data
+                            modeling. Created UI widgets and interactive components emphasizing user
+                            experience principles crucial for effective dashboards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         PROJECTS SECTION
+         ===================================================== -->
+    <section id="projects">
+        <div class="section-header">
+            <span>Notable</span> Projects
+        </div>
+
+        <div class="projects-list">
+
+            <!-- ── Project 01 ─────────────────────────────── -->
+            <!--
+                HOW TO ADD A REAL PROJECT:
+                1. Replace "COMING SOON — ADD YOUR PROJECT HERE" with your project title
+                2. Update the description paragraph
+                3. Update Tools and Analysis fields
+                4. Replace the placeholder image divs with actual <img> tags or screenshots
+                5. Update the href on each button to link to your report / GitHub / dashboard
+            -->
+            <div class="project-item">
+                <div>
+                    <span class="project-number">01</span>
+                    <div class="project-title">
+                        <h3>COMING SOON —<br>ADD YOUR PROJECT HERE</h3>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-images">
+                        <div class="project-image" style="background: linear-gradient(45deg, #ff9a00, #ffd700); grid-column: 1; grid-row: 1 / 3; height: 400px; display:flex; align-items:center; justify-content:center; font-size:3rem;">📊</div>
+                        <div class="project-image" style="background: #1a2b4a; height: 190px;"></div>
+                        <div class="project-image" style="background: #1a2b4a; height: 190px;"></div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            This is a placeholder for your first data analysis project. Replace this
+                            with a real project using <span class="highlight-text">Python, SQL, or Power BI</span>.
+                            Describe the problem you solved, the approach you took, and the
+                            <span class="highlight-text">key insights and impact</span> your analysis delivered.
+                        </p>
+                        <div class="project-meta">
+                            <p><strong>Tools:</strong> Python, SQL, Power BI</p>
+                            <p><strong>Analysis:</strong> EDA, Machine Learning</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="project-btn">Full Report</a>
+                            <a href="#" class="project-btn">GitHub Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Project 02 ─────────────────────────────── -->
+            <div class="project-item">
+                <div>
+                    <span class="project-number">02</span>
+                    <div class="project-title">
+                        <h3>COMING SOON —<br>ADD YOUR PROJECT HERE</h3>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-images">
+                        <div class="project-image" style="background: linear-gradient(45deg, #2c3e50, #3498db); grid-column: 1; grid-row: 1 / 3; height: 400px; display:flex; align-items:center; justify-content:center; font-size:3rem;">🤖</div>
+                        <div class="project-image" style="background: #1a2b4a; height: 190px;"></div>
+                        <div class="project-image" style="background: #1a2b4a; height: 190px;"></div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            Placeholder for your second project. Consider showcasing a
+                            <span class="highlight-text">machine learning</span> project using scikit-learn, or a
+                            <span class="highlight-text">data visualization dashboard</span> built with Power BI.
+                            Highlight the business problem and the
+                            <span class="highlight-text">measurable outcome</span> of your analysis.
+                        </p>
+                        <div class="project-meta">
+                            <p><strong>Tools:</strong> Python (scikit-learn, pandas), Power BI</p>
+                            <p><strong>Analysis:</strong> Supervised / Unsupervised Learning</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="project-btn">Full Report</a>
+                            <a href="#" class="project-btn">Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT SECTION
+         ===================================================== -->
+    <section id="contact">
+        <div class="section-header">
+            <span>Contact</span> Info
+        </div>
+
+        <div class="contact-content">
+            <h2>Let's <span class="highlight">connect</span> and<br>work together!</h2>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Phone (WhatsApp)</strong>
+                    <a href="tel:+919674346700">+91 96743 46700</a>
+                    <div class="contact-icon">📱</div>
+                </div>
+                <div class="contact-item">
+                    <strong>E-mail</strong>
+                    <a href="mailto:aloke8459@gnmail.com">aloke8459@gnmail.com</a>
+                    <div class="contact-icon">✉️</div>
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn</strong>
+                    <a href="https://linkedin.com/in/tanmoy11ghatak" target="_blank">linkedin.com/in/tanmoy11ghatak</a>
+                    <div class="contact-icon">💼</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
