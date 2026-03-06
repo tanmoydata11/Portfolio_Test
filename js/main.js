@@ -237,3 +237,81 @@ document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   changeEcSlide(-1);
     }
 });
+
+/* ----------------------------------------------------------
+   5. Mobile Behavior Presentation Modal
+   ---------------------------------------------------------- */
+
+const UB_TOTAL_SLIDES = 14;
+let ubCurrentSlide = 1;
+
+function changeUbSlide(delta) {
+    ubCurrentSlide = Math.max(1, Math.min(ubCurrentSlide + delta, UB_TOTAL_SLIDES));
+
+    const img = document.getElementById('ubSlideImage');
+    if (img) {
+        img.style.opacity = '0';
+        img.src = `assets/projects/mobile-behavior/ub-slide-${padSlide(ubCurrentSlide)}.jpg`;
+        img.alt = `Slide ${ubCurrentSlide}`;
+        img.onload = () => { img.style.opacity = '1'; };
+    }
+
+    const counter = document.getElementById('ubSlideCounter');
+    if (counter) counter.textContent = `${ubCurrentSlide} / ${UB_TOTAL_SLIDES}`;
+
+    document.querySelectorAll('#ubSlideThumbs .slide-thumb').forEach((thumb, i) => {
+        thumb.classList.toggle('active', i + 1 === ubCurrentSlide);
+        if (i + 1 === ubCurrentSlide) {
+            thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }
+    });
+
+    const prev = document.getElementById('ubPrev');
+    const next = document.getElementById('ubNext');
+    if (prev) prev.disabled = ubCurrentSlide === 1;
+    if (next) next.disabled = ubCurrentSlide === UB_TOTAL_SLIDES;
+}
+
+function buildUbThumbnails() {
+    const strip = document.getElementById('ubSlideThumbs');
+    if (!strip || strip.children.length > 0) return;
+
+    for (let i = 1; i <= UB_TOTAL_SLIDES; i++) {
+        const thumb = document.createElement('div');
+        thumb.className = 'slide-thumb';
+        thumb.setAttribute('title', `Slide ${i}`);
+        thumb.onclick = () => { ubCurrentSlide = i; changeUbSlide(0); };
+
+        const img = document.createElement('img');
+        img.src = `assets/projects/mobile-behavior/ub-slide-${padSlide(i)}.jpg`;
+        img.alt = `Slide ${i}`;
+        img.loading = 'lazy';
+
+        thumb.appendChild(img);
+        strip.appendChild(thumb);
+    }
+
+    const hint = document.createElement('p');
+    hint.className = 'slide-keyboard-hint';
+    hint.textContent = 'Use ← → arrow keys to navigate';
+    strip.parentElement.appendChild(hint);
+}
+
+// Extend openModal for mobile modal
+const _origOpenModal2 = window.openModal;
+window.openModal = function(id) {
+    _origOpenModal2(id);
+    if (id === 'mobilePresentationModal') {
+        buildUbThumbnails();
+        ubCurrentSlide = 1;
+        changeUbSlide(0);
+    }
+};
+
+// Arrow key support
+document.addEventListener('keydown', (e) => {
+    if (document.getElementById('mobilePresentationModal')?.classList.contains('is-open')) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') changeUbSlide(1);
+        if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   changeUbSlide(-1);
+    }
+});
