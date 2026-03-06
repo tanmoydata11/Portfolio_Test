@@ -57,14 +57,7 @@
             <!-- Right: Profile Photo -->
             <div class="hero-image">
                 <div class="profile-circle">
-                    <!--
-                        HOW TO ADD YOUR PHOTO:
-                        1. Put your photo (e.g. profile.jpg) inside assets/images/
-                        2. Delete the <div class="profile-initials"> block below
-                        3. Uncomment the <img> tag below
-                    -->
-                    <!-- <img src="assets/images/profile.jpg" alt="Tanmoy Ghatak"> -->
-                    <div class="profile-initials">TG</div>
+                    <img src="assets/images/profile.png" alt="Tanmoy Ghatak">
                 </div>
             </div>
 
@@ -111,13 +104,7 @@
 
         <!-- CTA Buttons -->
         <div class="cta-buttons">
-            <!--
-                HOW TO ADD CV DOWNLOAD:
-                1. Put your CV PDF inside assets/ (e.g. assets/Tanmoy_CV.pdf)
-                2. Update the href below to: href="assets/Tanmoy_CV.pdf"
-                3. Add the download attribute: download="Tanmoy_Ghatak_CV.pdf"
-            -->
-            <a href="#" class="btn btn-primary">Download CV</a>
+            <a href="assets/Tanmoy_Ghatak_CV.pdf" download="Tanmoy_Ghatak_CV.pdf" class="btn btn-primary">⬇ Download CV</a>
             <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
     </section>
@@ -184,18 +171,6 @@
                         <span>matplotlib</span>
                     </div>
                 </div>
-            </div>
-
-            <!-- Column 4: ML & Dev Skills -->
-            <div class="skill-category">
-                <h4>Machine Learning &<br>Development Skills</h4>
-                <ul class="skill-list">
-                    <li>Supervised Learning</li>
-                    <li>Unsupervised Learning</li>
-                    <li>VR/AR Development</li>
-                    <li>Game Development</li>
-                    <li>UI Development</li>
-                </ul>
             </div>
 
         </div>
@@ -277,41 +252,109 @@
         <div class="projects-list">
 
             <!-- ── Project 01 ─────────────────────────────── -->
-            <!--
-                HOW TO ADD A REAL PROJECT:
-                1. Replace "COMING SOON — ADD YOUR PROJECT HERE" with your project title
-                2. Update the description paragraph
-                3. Update Tools and Analysis fields
-                4. Replace the placeholder image divs with actual <img> tags or screenshots
-                5. Update the href on each button to link to your report / GitHub / dashboard
-            -->
             <div class="project-item">
-                <div>
+                <div class="project-header">
                     <span class="project-number">01</span>
                     <div class="project-title">
-                        <h3>COMING SOON —<br>ADD YOUR PROJECT HERE</h3>
+                        <h3>HR ATTRITION<br>ANALYSIS DASHBOARD</h3>
                     </div>
                 </div>
                 <div class="project-content">
                     <div class="project-images">
-                        <div class="project-image" style="background: linear-gradient(45deg, #ff9a00, #ffd700); grid-column: 1; grid-row: 1 / 3; height: 400px; display:flex; align-items:center; justify-content:center; font-size:3rem;">📊</div>
-                        <div class="project-image" style="background: #1a2b4a; height: 190px;"></div>
-                        <div class="project-image" style="background: #1a2b4a; height: 190px;"></div>
+                        <!-- Main large card -->
+                        <div class="project-image project-image--main">
+                            <div class="project-visual project-visual--main">
+                                <div class="pv-kpi-row">
+                                    <div class="pv-kpi">
+                                        <span class="pv-kpi-val">4,410</span>
+                                        <span class="pv-kpi-label">Employees</span>
+                                    </div>
+                                    <div class="pv-kpi">
+                                        <span class="pv-kpi-val" style="color:#e74c3c;">711</span>
+                                        <span class="pv-kpi-label">Attrition</span>
+                                    </div>
+                                    <div class="pv-kpi">
+                                        <span class="pv-kpi-val" style="color:#e74c3c;">16.12%</span>
+                                        <span class="pv-kpi-label">Rate</span>
+                                    </div>
+                                </div>
+                                <div class="pv-bars">
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label">R&amp;D</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:63%;background:#e74c3c;"></div></div>
+                                        <span class="pv-bar-pct">28.27%</span>
+                                    </div>
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label">Sales</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:45%;background:#f39c12;"></div></div>
+                                        <span class="pv-bar-pct">20.63%</span>
+                                    </div>
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label">HR</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:18%;background:#2ecc71;"></div></div>
+                                        <span class="pv-bar-pct">8.02%</span>
+                                    </div>
+                                </div>
+                                <div class="pv-label">Department Attrition Rates</div>
+                            </div>
+                        </div>
+                        <!-- Top-right card -->
+                        <div class="project-image project-image--sm">
+                            <div class="project-visual project-visual--sm">
+                                <div class="pv-gender">
+                                    <div class="pv-gender-item">
+                                        <div class="pv-gender-bar-wrap">
+                                            <div class="pv-gender-fill" style="height:73%;background:#e74c3c;"></div>
+                                        </div>
+                                        <span>Female<br><strong>36.5%</strong></span>
+                                    </div>
+                                    <div class="pv-gender-item">
+                                        <div class="pv-gender-bar-wrap">
+                                            <div class="pv-gender-fill" style="height:33%;background:#3498db;"></div>
+                                        </div>
+                                        <span>Male<br><strong>16.5%</strong></span>
+                                    </div>
+                                </div>
+                                <div class="pv-label">Attrition by Gender</div>
+                            </div>
+                        </div>
+                        <!-- Bottom-right card -->
+                        <div class="project-image project-image--sm">
+                            <div class="project-visual project-visual--sm">
+                                <div class="pv-satisfaction">
+                                    <div class="pv-sat-row"><span>Low Satisfaction</span><div class="pv-sat-dot pv-sat-red"></div><span style="color:#e74c3c;">High Attrition</span></div>
+                                    <div class="pv-sat-row"><span>Mid Satisfaction</span><div class="pv-sat-dot pv-sat-yellow"></div><span style="color:#f39c12;">Moderate</span></div>
+                                    <div class="pv-sat-row"><span>High Satisfaction</span><div class="pv-sat-dot pv-sat-green"></div><span style="color:#2ecc71;">Low Attrition</span></div>
+                                </div>
+                                <div class="pv-label">Job Satisfaction vs Attrition</div>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="project-description">
                         <p>
-                            This is a placeholder for your first data analysis project. Replace this
-                            with a real project using <span class="highlight-text">Python, SQL, or Power BI</span>.
-                            Describe the problem you solved, the approach you took, and the
-                            <span class="highlight-text">key insights and impact</span> your analysis delivered.
+                            A comprehensive <span class="highlight-text">Tableau HR Analytics Dashboard</span> examining
+                            employee turnover patterns across <span class="highlight-text">4,410 employees</span> to
+                            understand who is leaving, why, and what can be done to improve retention.
+                            Identified an overall attrition rate of <span class="highlight-text">16.12%</span> with
+                            critical findings across departments, gender, age groups, and salary bands.
+                        </p>
+                        <p>
+                            Key findings revealed <span class="highlight-text">R&D department attrition at 28.27%</span>
+                            — nearly 1 in 3 employees leaving annually — and a significant gender disparity
+                            where female attrition (36.5%) was <span class="highlight-text">2.2× higher than male</span>
+                            (16.5%), enabling targeted retention strategies with projected savings of
+                            <span class="highlight-text">$2M–$5M annually</span>.
                         </p>
                         <div class="project-meta">
-                            <p><strong>Tools:</strong> Python, SQL, Power BI</p>
-                            <p><strong>Analysis:</strong> EDA, Machine Learning</p>
+                            <p><strong>Tools:</strong> Tableau Desktop, CSV Data Analysis</p>
+                            <p><strong>Analysis:</strong> Attrition Analysis, Demographic Segmentation, KPI Dashboarding, Retention Strategy</p>
+                            <p><strong>Dataset:</strong> 4,410 employees · 30+ HR attributes · 3 departments · 9+ job roles</p>
                         </div>
                         <div class="project-buttons">
-                            <a href="#" class="project-btn">Full Report</a>
-                            <a href="#" class="project-btn">GitHub Code</a>
+                            <a href="https://github.com/tanmoydata11/HR-Attrition-Analysis" target="_blank" class="project-btn">GitHub Repository</a>
+                            <button onclick="openModal('dashboardModal')" class="project-btn">View Dashboard</button>
+                            <button onclick="openModal('presentationModal')" class="project-btn">View Presentation</button>
                         </div>
                     </div>
                 </div>
@@ -319,33 +362,133 @@
 
             <!-- ── Project 02 ─────────────────────────────── -->
             <div class="project-item">
-                <div>
+                <div class="project-header">
                     <span class="project-number">02</span>
                     <div class="project-title">
-                        <h3>COMING SOON —<br>ADD YOUR PROJECT HERE</h3>
+                        <h3>E-COMMERCE SALES<br>ANALYSIS — POWER BI</h3>
                     </div>
                 </div>
                 <div class="project-content">
                     <div class="project-images">
-                        <div class="project-image" style="background: linear-gradient(45deg, #2c3e50, #3498db); grid-column: 1; grid-row: 1 / 3; height: 400px; display:flex; align-items:center; justify-content:center; font-size:3rem;">🤖</div>
-                        <div class="project-image" style="background: #1a2b4a; height: 190px;"></div>
-                        <div class="project-image" style="background: #1a2b4a; height: 190px;"></div>
+                        <!-- Main large card -->
+                        <div class="project-image project-image--main">
+                            <div class="project-visual project-visual--main">
+                                <div class="pv-kpi-row">
+                                    <div class="pv-kpi">
+                                        <span class="pv-kpi-val">438K</span>
+                                        <span class="pv-kpi-label">Sales Amount</span>
+                                    </div>
+                                    <div class="pv-kpi">
+                                        <span class="pv-kpi-val" style="color:#2ecc71;">37K</span>
+                                        <span class="pv-kpi-label">Profit</span>
+                                    </div>
+                                    <div class="pv-kpi">
+                                        <span class="pv-kpi-val">5,615</span>
+                                        <span class="pv-kpi-label">Qty Sold</span>
+                                    </div>
+                                </div>
+                                <div class="pv-bars">
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label">Printers</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:100%;background:#8e44ad;"></div></div>
+                                        <span class="pv-bar-pct">8.6K</span>
+                                    </div>
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label">Bookcases</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:76%;background:#8e44ad;"></div></div>
+                                        <span class="pv-bar-pct">6.5K</span>
+                                    </div>
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label">Saree</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:48%;background:#2ecc71;"></div></div>
+                                        <span class="pv-bar-pct">4.1K</span>
+                                    </div>
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label">Accessories</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:40%;background:#2ecc71;"></div></div>
+                                        <span class="pv-bar-pct">3.4K</span>
+                                    </div>
+                                </div>
+                                <div class="pv-label">Profit by Sub-Category</div>
+                            </div>
+                        </div>
+                        <!-- Top-right card -->
+                        <div class="project-image project-image--sm">
+                            <div class="project-visual project-visual--sm">
+                                <div class="pv-bars" style="gap:0.6rem;">
+                                    <div style="font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.5);margin-bottom:0.2rem;">Payment Mode Split</div>
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label" style="min-width:48px;font-size:0.7rem;">COD</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:44%;background:#2ecc71;"></div></div>
+                                        <span class="pv-bar-pct" style="font-size:0.7rem;">44%</span>
+                                    </div>
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label" style="min-width:48px;font-size:0.7rem;">UPI</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:21%;background:#3498db;"></div></div>
+                                        <span class="pv-bar-pct" style="font-size:0.7rem;">21%</span>
+                                    </div>
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label" style="min-width:48px;font-size:0.7rem;">Debit</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:13%;background:#e67e22;"></div></div>
+                                        <span class="pv-bar-pct" style="font-size:0.7rem;">13%</span>
+                                    </div>
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label" style="min-width:48px;font-size:0.7rem;">Credit</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:12%;background:#e74c3c;"></div></div>
+                                        <span class="pv-bar-pct" style="font-size:0.7rem;">12%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Bottom-right card -->
+                        <div class="project-image project-image--sm">
+                            <div class="project-visual project-visual--sm">
+                                <div style="font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.5);margin-bottom:0.6rem;">Peak Profit Months</div>
+                                <div class="pv-bars" style="gap:0.5rem;">
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label" style="min-width:34px;font-size:0.7rem;">Nov</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:100%;background:#f1c40f;"></div></div>
+                                        <span class="pv-bar-pct" style="font-size:0.7rem;">10.3K</span>
+                                    </div>
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label" style="min-width:34px;font-size:0.7rem;">Jan</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:94%;background:#f1c40f;"></div></div>
+                                        <span class="pv-bar-pct" style="font-size:0.7rem;">9.7K</span>
+                                    </div>
+                                    <div class="pv-bar-row">
+                                        <span class="pv-bar-label" style="min-width:34px;font-size:0.7rem;">Feb</span>
+                                        <div class="pv-bar-track"><div class="pv-bar-fill" style="width:82%;background:#f1c40f;"></div></div>
+                                        <span class="pv-bar-pct" style="font-size:0.7rem;">8.5K</span>
+                                    </div>
+                                </div>
+                                <div class="pv-label" style="margin-top:0.5rem;">Profit by Month (2018)</div>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="project-description">
                         <p>
-                            Placeholder for your second project. Consider showcasing a
-                            <span class="highlight-text">machine learning</span> project using scikit-learn, or a
-                            <span class="highlight-text">data visualization dashboard</span> built with Power BI.
-                            Highlight the business problem and the
-                            <span class="highlight-text">measurable outcome</span> of your analysis.
+                            A comprehensive <span class="highlight-text">Power BI e-commerce dashboard</span> analysing
+                            sales, profit, and customer behaviour across India for the full year 2018.
+                            Built an interactive multi-page report with <span class="highlight-text">DAX formulas and Power Query</span>
+                            to model relationships between two datasets — Orders and Order Details —
+                            delivering dynamic quarterly filtering and drill-down capabilities.
+                        </p>
+                        <p>
+                            Key findings: <span class="highlight-text">Printers and Bookcases</span> drove the highest profit
+                            at ₹8.6K and ₹6.5K respectively. <span class="highlight-text">COD dominated</span> payment modes
+                            at 44%, while <span class="highlight-text">November was the peak profit month</span> at ₹10.3K.
+                            Identified seasonal dips (May–August) enabling targeted promotional planning.
                         </p>
                         <div class="project-meta">
-                            <p><strong>Tools:</strong> Python (scikit-learn, pandas), Power BI</p>
-                            <p><strong>Analysis:</strong> Supervised / Unsupervised Learning</p>
+                            <p><strong>Tools:</strong> Microsoft Power BI, DAX, Power Query, CSV</p>
+                            <p><strong>Analysis:</strong> Sales Performance, Profitability Analysis, Customer Segmentation, Payment Behaviour</p>
+                            <p><strong>Dataset:</strong> E-commerce orders Jan–Dec 2018 · Multi-table data model</p>
                         </div>
                         <div class="project-buttons">
-                            <a href="#" class="project-btn">Full Report</a>
-                            <a href="#" class="project-btn">Dashboard</a>
+                            <a href="https://github.com/tanmoydata11/Sales_report_using_PowerBI" target="_blank" class="project-btn">GitHub Repository</a>
+                            <button onclick="openModal('ecommerceDashboardModal')" class="project-btn">View Dashboard</button>
+                            <button onclick="openModal('ecommercePresentationModal')" class="project-btn">View Presentation</button>
                         </div>
                     </div>
                 </div>
@@ -386,6 +529,89 @@
         </div>
     </section>
 
+
+
+    <!-- =====================================================
+         MODAL: DASHBOARD VIEWER
+         ===================================================== -->
+    <div id="dashboardModal" class="modal" onclick="handleModalClick(event, 'dashboardModal')">
+        <div class="modal-box modal-box--wide">
+            <div class="modal-header">
+                <h3>HR Attrition Analysis — Tableau Dashboard</h3>
+                <button class="modal-close" onclick="closeModal('dashboardModal')">✕</button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/projects/hr-attrition/dashboard.png" alt="HR Attrition Dashboard" class="modal-full-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================================
+         MODAL: PRESENTATION VIEWER
+         ===================================================== -->
+    <div id="presentationModal" class="modal" onclick="handleModalClick(event, 'presentationModal')">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Business Insights Presentation <span class="modal-slide-counter" id="slideCounter">1 / 16</span></h3>
+                <div class="modal-header-actions">
+                    <a href="assets/projects/hr-attrition/Business_Insights_Presentation.pptx" download="HR_Attrition_Presentation.pptx" class="modal-download-btn">⬇ Download PPTX</a>
+                    <button class="modal-close" onclick="closeModal('presentationModal')">✕</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="slide-viewer">
+                    <button class="slide-nav slide-nav--prev" onclick="changeSlide(-1)">&#8249;</button>
+                    <div class="slide-display">
+                        <img id="slideImage" src="assets/projects/hr-attrition/slide-01.jpg" alt="Slide 1">
+                    </div>
+                    <button class="slide-nav slide-nav--next" onclick="changeSlide(1)">&#8250;</button>
+                </div>
+                <!-- Thumbnail strip -->
+                <div class="slide-thumbnails" id="slideThumbs"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =====================================================
+         MODAL: E-COMMERCE DASHBOARD VIEWER
+         ===================================================== -->
+    <div id="ecommerceDashboardModal" class="modal" onclick="handleModalClick(event, 'ecommerceDashboardModal')">
+        <div class="modal-box modal-box--wide">
+            <div class="modal-header">
+                <h3>E-Commerce Sales — Power BI Dashboard</h3>
+                <button class="modal-close" onclick="closeModal('ecommerceDashboardModal')">✕</button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/projects/ecommerce-sales/dashboard.png" alt="E-Commerce Sales Dashboard" class="modal-full-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================================
+         MODAL: E-COMMERCE PRESENTATION VIEWER
+         ===================================================== -->
+    <div id="ecommercePresentationModal" class="modal" onclick="handleModalClick(event, 'ecommercePresentationModal')">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>E-Commerce Insights Presentation <span class="modal-slide-counter" id="ecSlideCounter">1 / 12</span></h3>
+                <div class="modal-header-actions">
+                    <a href="assets/projects/ecommerce-sales/ECommerce_Insights.pptx" download="ECommerce_Insights.pptx" class="modal-download-btn">⬇ Download PPTX</a>
+                    <button class="modal-close" onclick="closeModal('ecommercePresentationModal')">✕</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="slide-viewer">
+                    <button class="slide-nav slide-nav--prev" id="ecPrev" onclick="changeEcSlide(-1)">&#8249;</button>
+                    <div class="slide-display">
+                        <img id="ecSlideImage" src="assets/projects/ecommerce-sales/ec-slide-01.jpg" alt="Slide 1">
+                    </div>
+                    <button class="slide-nav slide-nav--next" id="ecNext" onclick="changeEcSlide(1)">&#8250;</button>
+                </div>
+                <div class="slide-thumbnails" id="ecSlideThumbs"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
